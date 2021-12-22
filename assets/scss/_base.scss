@@ -1,0 +1,97 @@
+// @font-face {
+//     font-family: 'Good Vibes';
+//     font-style: normal;
+//     font-weight: 400;
+//     font-display: swap;
+//     src: url('~assets/fonts/GoodVibesCyr.ttf') format('truetype');
+//   }
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 300, 400, 800;
+    font-display: swap;
+    src: url('~assets/fonts/Nunito-Light.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'NunitoB';
+    font-style: normal;
+    font-weight: 300, 400, 800;
+    font-display: swap;
+    src: url('~assets/fonts/Nunito-Black.ttf') format('truetype');
+  }
+
+
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Quicksand', sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+    background-color: $color-background-lite;
+}
+
+body {
+    font-family: $font-primary;
+    color: $font-dark;
+    font-weight: 300;
+    line-height: 1.6;
+    background-color: #FFF8F5;
+}
+
+h1 {
+    font-family: "NunitoB";
+    font-size: 6rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-family: "NunitoB";
+    color: $font-dark;
+    font-size: 4.5rem;
+}
+
+h3 {
+    font-family: "NunitoB";
+    color: $color-main;
+    font-size: 2rem;
+    align: center;
+    margin: 2rem 0;
+    
+}
+
+h4 {
+    font-family: "NunitoB";
+    color: $color-main;
+    font-size: 2rem;
+    padding-top: 3rem;
+
+
+}
+
+p {
+    font-family: "Nunito";
+    color: $font-dark;
+    font-size: 1.7rem;
+}
+
